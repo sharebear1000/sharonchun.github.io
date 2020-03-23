@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* Basic */
+
+	body {
+		background-color: skyblue;
+	}
+
+/* Type */
+
+	body {
+		color: rgba(255, 255, 255, 0.65);
+		font-family: "avenir", Avenir, sans-serif;
+		font-size: 13pt;
+		font-weight: 200;
+		line-height: 1.65;
+	}
+
+	strong, b {
+		color: #ffffff;
+		font-weight: 300;
+	}
+
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 200;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+
+/* Thumbnails */
+
+	.thumbnails {
+		display: flex;
+	}
+
+		.thumbnails a {
+			margin: 0 0 2em 0;
+			text-align: center;
+			border-radius: 4px;
+			background-color: skyblue;
+		}
+
+			.thumbnails a img {
+				display: block;
+				width: 100%;
+			}
+
+			.thumbnails a h3 {
+				margin: 1em;
+			}
+
+			.thumbnails a:hover {
+				background-color: rgba(255, 255, 255, 0.25);
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FFFFFF;
+			}
+
+		.thumbnails > div {
+			display: flex;
+			flex-direction: column;
+			width: calc(100% / 3);
+		}
+
+
+		@media screen and (max-width: 1280px) {
+
+			.thumbnails {
+				margin: 0 0 2em -1.5em;
+			}
+
+				.thumbnails > div {
+					padding-left: 1.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.thumbnails h3 {
+				font-size: 0.8em;
+			}
+
+		}
+
+/* Wrapper */
+
+	#wrapper {
+		margin: 0 auto;
+		padding: 0 2em;
+	}
+
+
+/* Header */
+
+	#header {
+		text-align: center;
+		padding: 10em 0 4em 0;
+	}
+
+		#header h1 {
+			color: rgba(255, 255, 255, 0.65);
+            margin: 1.5em;
+		}
+
+			#header .avatar img {
+				width: 100%;
+			}
+
+		@media screen and (max-width: 1280px) {
+
+			#header {
+				padding: 4em 0 2em 0;
+			}
+
+		}
+
